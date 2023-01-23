@@ -8,12 +8,22 @@
 import Foundation
 
 struct Car {
-    let make: String
-    let model: String
-    let topSpeed: Int
-    let acceleration: Double
-    let handling: Int
+    var make: String
+    var model: String
+    var topSpeed: Int
+    var acceleration: Double
+    var handling: Int
     
+    func displayStats() -> String{
+        return """
+           Make: \(make)
+           Model: \(model)
+           Top speed: \(topSpeed)mph
+           Acceleration(0-60): \(acceleration)s
+           Handling: \(handling)
+           """
+
+    }
 }
 
 //hello
